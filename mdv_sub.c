@@ -6,7 +6,7 @@
  * @line_number: line number
  * Return: 0 on success, EXIT_FAILURE on failure
  */
-int mdv_sub(stack_t **head, unsigned int line_number)
+void mdv_sub(stack_t **head, unsigned int line_number)
 {
     stack_t *top; /* Pointer to the top of the stack */
     int diff; /* Difference between the top two elements */
@@ -33,7 +33,6 @@ int mdv_sub(stack_t **head, unsigned int line_number)
     /* Remove the top element and free its memory */
     *head = top->next;
     free(top);
-    /* Return success */
-    return 0;
+
 }
 
