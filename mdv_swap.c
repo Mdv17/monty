@@ -6,7 +6,7 @@
  * @line_number: line number
  * Return: 0 on success, EXIT_FAILURE on failure
  */
-int mdv_swap(stack_t **head, unsigned int line_number)
+void mdv_swap(stack_t **head, unsigned int line_number)
 {
     stack_t *top; /* Pointer to the top of the stack */
     int size; /* Number of nodes in the stack */
@@ -34,6 +34,4 @@ int mdv_swap(stack_t **head, unsigned int line_number)
     temp = top->n;
     top->n = top->next->n;
     top->next->n = temp;
-    /* Return success */
-    return 0;
 }
