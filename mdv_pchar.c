@@ -28,5 +28,4 @@ void mdv_pchar(stack_t **head, unsigned int counter)
 		exit(EXIT_FAILURE);
 	}
 	printf("%c\n", h->n);
-    return 0;
 }
