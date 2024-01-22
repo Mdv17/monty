@@ -68,7 +68,7 @@ void mdv_pop(stack_t **head, unsigned int counter);
 void mdv_swap(stack_t **head, unsigned int counter);
 void mdv_add(stack_t **head, unsigned int counter);
 void mdv_nop(stack_t **head, unsigned int counter);
-void mdv_sub(stack_t **head, unsigned int counter);
+void mdv_sub(stack_t **head, unsigned int line_number);
 void mdv_div(stack_t **head, unsigned int counter);
 void mdv_mul(stack_t **head, unsigned int counter);
 void mdv_mod(stack_t **head, unsigned int counter);
