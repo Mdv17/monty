@@ -61,7 +61,7 @@ ssize_t getstdin(char **lineptr, int file);
 char  *clean_line(char *content);
 void mdv_push(stack_t **head, unsigned int number);
 void mdv_pall(stack_t **head, unsigned int number);
-void mdv_pint(stack_t **head, unsigned int number);
+void mdv_pint(stack_t **head, unsigned int line_number);
 int execute(char *content, stack_t **head, unsigned int counter, FILE *file);
 void free_stack(stack_t *head);
 void mdv_pop(stack_t **head, unsigned int counter);
@@ -80,4 +80,5 @@ void addnode(stack_t **head, int n);
 void addqueue(stack_t **head, int n);
 void mdv_queue(stack_t **head, unsigned int counter);
 void mdv_stack(stack_t **head, unsigned int line_number);
+int getline(char **buffer, size_t *size, FILE *stream);
 #endif

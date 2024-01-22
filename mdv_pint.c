@@ -20,6 +20,4 @@ void mdv_pint(stack_t **head, unsigned int line_number)
     }
     /* Print the value at the top and a new line */
     printf("%d\n", (*head)->n);
-    /* Return success */
-    return 0;
 }

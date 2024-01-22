@@ -1,4 +1,7 @@
 #include "monty.h"
+#define _GNU_SOURCE
+
+
 bus_t bus = {NULL, NULL, NULL, 0};
 /**
 * main - monty code interpreter
@@ -35,7 +38,7 @@ int main(int argc, char *argv[])
 		counter++;
 		if (read_line > 0)
 		{
-			mdv_execute(content, &stack, counter, file);
+			execute(content, &stack, counter, file);
 		}
 		free(content);
 	}
