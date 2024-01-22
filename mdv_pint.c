@@ -7,7 +7,7 @@
  * @line_number: line number
  * Return: 0 on success, EXIT_FAILURE on failure
  */
-int mdv_pint(stack_t **head, unsigned int line_number)
+void mdv_pint(stack_t **head, unsigned int line_number)
 {
     /* Check if the stack is empty */
     if (*head == NULL)
